@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>网站地图 - 企信聚合</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo"><span class="logo-icon">企</span>企信聚合</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a>
+      <a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a>
+    </nav>
+    <div class="header-right">
+      <form class="header-search search-form" action="search.html">
+        <input type="text" name="q" placeholder="搜索资讯、企业..." class="search-input-from-url">
+        <button type="submit"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      </form>
+      <a href="login.html" class="btn btn-primary btn-sm">登录</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" style="padding:6px"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobile-drawer" class="mobile-drawer">
+  <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+  <div style="margin-top:40px" class="mobile-nav">
+    <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="login.html">登录</a>
+  </div>
+</div>
+
+<main>
+  <div class="container" style="padding-top:32px;padding-bottom:60px">
+    <div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>网站地图</span></div>
+
+    <h1 style="font-size:1.5rem;font-weight:700;margin-bottom:32px">网站地图</h1>
+
+    <!-- Main Pages -->
+    <div class="sitemap-section">
+      <h3>主要页面</h3>
+      <div class="sitemap-links">
+        <a href="index.html">首页（门户总入口）</a>
+        <a href="news-list.html">资讯中心（列表页）</a>
+        <a href="categories.html">分类频道</a>
+        <a href="enterprise-list.html">入驻企业</a>
+        <a href="search.html">搜索</a>
+      </div>
+    </div>
+
+    <!-- News Categories -->
+    <div class="sitemap-section">
+      <h3>资讯分类</h3>
+      <div class="sitemap-links">
+        <a href="news-list.html?cat=industry">行业资讯</a>
+        <a href="news-list.html?cat=dynamic">企业动态</a>
+        <a href="news-list.html?cat=policy">政策公告</a>
+        <a href="news-list.html?cat=activity">活动通知</a>
+        <a href="news-list.html?cat=product">产品资讯</a>
+        <a href="news-list.html?cat=tech">技术前沿</a>
+        <a href="news-list.html?cat=finance">财经观察</a>
+        <a href="news-list.html?cat=hr">人才招聘</a>
+        <a href="news-list.html?cat=case">案例分享</a>
+      </div>
+    </div>
+
+    <!-- Enterprises -->
+    <div class="sitemap-section">
+      <h3>入驻企业专区</h3>
+      <div class="sitemap-links">
+        <a href="enterprise-zone.html?id=1">智云科技</a>
+        <a href="enterprise-zone.html?id=2">数联科技</a>
+        <a href="enterprise-zone.html?id=3">绿环检测</a>
+        <a href="enterprise-zone.html?id=4">创信软通</a>
+        <a href="enterprise-zone.html?id=5">融策咨询</a>
+        <a href="enterprise-zone.html?id=6">科达专利</a>
+        <a href="enterprise-zone.html?id=7">精准检测</a>
+        <a href="enterprise-zone.html?id=8">慧策云商</a>
+        <a href="enterprise-zone.html?id=9">安盾网安</a>
+      </div>
+    </div>
+
+    <!-- Platform Pages -->
+    <div class="sitemap-section">
+      <h3>平台信息</h3>
+      <div class="sitemap-links">
+        <a href="about.html">平台介绍</a>
+        <a href="help.html">帮助中心</a>
+        <a href="sitemap.html">网站地图</a>
+        <a href="404.html">404错误页</a>
+      </div>
+    </div>
+
+    <!-- Help Pages -->
+    <div class="sitemap-section">
+      <h3>帮助与支持</h3>
+      <div class="sitemap-links">
+        <a href="help.html#guide">投稿指南</a>
+        <a href="help.html#standards">发布规范</a>
+        <a href="help.html#faq">常见问题</a>
+        <a href="login.html">用户登录</a>
+        <a href="user-center.html">用户中心</a>
+      </div>
+    </div>
+
+    <!-- Legal -->
+    <div class="sitemap-section">
+      <h3>法律信息</h3>
+      <div class="sitemap-links">
+        <a href="#">用户协议</a>
+        <a href="#">隐私政策</a>
+        <a href="#">版权声明</a>
+        <a href="#">免责声明</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-icon">企</span>企信聚合</div><p>多企业资讯聚合门户，一站式企业资讯阅读与信息查询服务。</p></div>
+      <div class="footer-col"><h4>资讯中心</h4><a href="news-list.html?cat=industry">行业资讯</a><a href="news-list.html?cat=dynamic">企业动态</a><a href="news-list.html?cat=policy">政策公告</a><a href="news-list.html?cat=activity">活动通知</a><a href="news-list.html?cat=product">产品资讯</a></div>
+      <div class="footer-col"><h4>平台服务</h4><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="sitemap.html">网站地图</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="#">客服热线：400-888-0000</a><a href="#">商务合作：biz@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 企信聚合平台 版权所有</span><span><a href="#">京ICP备XXXXXXXX号-1</a> | <a href="#">京公网安备XXXXXXXXXXXXXX号</a></span></div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+</body>
+</html>
