@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>资讯中心 - 企信聚合</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo"><span class="logo-icon">企</span>企信聚合</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a>
+      <a href="news-list.html" class="active">资讯中心</a>
+      <a href="categories.html">分类频道</a>
+      <a href="enterprise-list.html">入驻企业</a>
+      <a href="about.html">平台介绍</a>
+      <a href="help.html">帮助中心</a>
+    </nav>
+    <div class="header-right">
+      <form class="header-search search-form" action="search.html">
+        <input type="text" name="q" placeholder="搜索资讯、企业..." class="search-input-from-url">
+        <button type="submit"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      </form>
+      <a href="login.html" class="btn btn-primary btn-sm">登录</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" style="padding:6px"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobile-drawer" class="mobile-drawer">
+  <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+  <div style="margin-top:40px" class="mobile-nav">
+    <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="login.html">登录</a>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">首页</a><span>/</span><span>资讯中心</span>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="tabs" style="border-bottom:1px solid var(--color-border);margin-bottom:20px">
+      <span class="tab-item active" data-tab="all">全部资讯</span>
+      <span class="tab-item" data-tab="industry">行业资讯</span>
+      <span class="tab-item" data-tab="dynamic">企业动态</span>
+      <span class="tab-item" data-tab="policy">政策公告</span>
+      <span class="tab-item" data-tab="activity">活动通知</span>
+      <span class="tab-item" data-tab="product">产品资讯</span>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <span class="filter-label">筛选：</span>
+      <select>
+        <option value="">全部时间</option>
+        <option>今天</option>
+        <option>近7天</option>
+        <option>近30天</option>
+        <option>近3个月</option>
+      </select>
+      <select>
+        <option value="">全部类型</option>
+        <option>图文</option>
+        <option>视频</option>
+        <option>公告</option>
+      </select>
+      <select>
+        <option value="">全部企业</option>
+        <option>智云科技</option>
+        <option>数联科技</option>
+        <option>绿环检测</option>
+        <option>创信软通</option>
+        <option>融策咨询</option>
+        <option>科达专利</option>
+      </select>
+      <span style="flex:1"></span>
+      <select style="width:120px">
+        <option>最新发布</option>
+        <option>最多阅读</option>
+        <option>最多收藏</option>
+      </select>
+    </div>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+      <!-- News List -->
+      <div>
+        <!-- Top / Pinned -->
+        <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:var(--radius-lg);padding:16px 20px;margin-bottom:20px;display:flex;align-items:center;gap:12px">
+          <span class="tag tag-top">置顶</span>
+          <a href="news-detail.html" style="font-size:.95rem;font-weight:600;color:var(--color-text);flex:1">重磅！国务院印发《关于加快推进企业数字化转型的指导意见》</a>
+          <span style="font-size:.75rem;color:var(--color-text-light);white-space:nowrap">2026-06-15</span>
+        </div>
+        <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:var(--radius-lg);padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;gap:12px">
+          <span class="tag tag-top">置顶</span>
+          <a href="news-detail.html" style="font-size:.95rem;font-weight:600;color:var(--color-text);flex:1">2026年度中小企业数字化转型试点申报工作正式启动</a>
+          <span style="font-size:.75rem;color:var(--color-text-light);white-space:nowrap">2026-06-14</span>
+        </div>
+
+        <!-- News Items -->
+        <a href="news-detail.html" class="news-item-h">
+          <div class="news-thumb" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-size:2rem">📊</div>
+          <div class="news-info">
+            <div>
+              <div class="news-title">2026年环评行业市场规模突破800亿，数字化渗透率显著提升</div>
+              <div class="news-excerpt">随着环保政策趋严和企业环保意识增强，环评行业迎来新一轮增长。数据显示，数字化工具在环评领域的渗透率已从2023年的32%提升至2026年的58%。</div>
+            </div>
+            <div class="news-meta"><span class="tag tag-blue">行业资讯</span><span class="source">企信研究院</span><span>2026-06-15</span><span>2.4k 阅读</span></div>
+          </div>
+        </a>
+
+        <a href="news-detail.html" class="news-item-h">
+          <div class="news-thumb" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);display:flex;align-items:center;justify-content:center;font-size:2rem">🏢</div>
+          <div class="news-info">
+            <div>
+              <div class="news-title">智云科技完成B轮融资2亿元，加速布局企业智能运维赛道</div>
+              <div class="news-excerpt">本轮融资由红杉资本领投，资金将用于产品研发和市场拓展，预计年底团队规模翻倍。公司估值已达15亿元。</div>
+            </div>
+            <div class="news-meta"><span class="tag tag-green">企业动态</span><span class="source">智云科技</span><span>2026-06-14</span><span>1.8k 阅读</span></div>
+          </div>
+        </a>
+
+        <a href="news-detail.html" class="news-item-h">
+          <div class="news-thumb" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);display:flex;align-items:center;justify-content:center;font-size:2rem">📋</div>
+          <div class="news-info">
+            <div>
+              <div class="news-title">工信部发布中小企业数字化转型试点城市名单，新增15城入选</div>
+              <div class="news-excerpt">第三批试点城市名单公布，每个城市将获得不超过1亿元的财政支持，推动区域中小企业数字化进程加速。</div>
+            </div>
+            <div class="news-meta"><span class="tag tag-orange">政策公告</span><span class="source">工信部</span><span>2026-06-13</span><span>3.2k 阅读</span></div>
+          </div>
+        </a>
+
+        <a href="news-detail.html" class="news-item-h">
+          <div class="news-thumb" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);display:flex;align-items:center;justify-content:center;font-size:2rem">💡</div>
+          <div class="news-info">
+            <div>
+              <div class="news-title">企信通Pro全新发布：一站式企业信息管理平台，覆盖全生命周期</div>
+              <div class="news-excerpt">整合工商信息、资质认证、知识产权等核心模块，助力企业高效管理运营数据。支持多维度数据分析与可视化报表。</div>
+            </div>
+            <div class="news-meta"><span class="tag tag-blue">产品资讯</span><span class="source">数联科技</span><span>2026-06-12</span><span>1.5k 阅读</span></div>
+          </div>
+        </a>
+
+        <a href="news-detail.html" class="news-item-h">
+          <div class="news-thumb" style="background:linear-gradient(135deg,#fee2e2,#fecaca);display:flex;align-items:center;justify-content:center;font-size:2rem">🎉</div>
+          <div class="news-info">
+            <div>
+              <div class="news-title">2026企业服务生态大会将于8月在北京国家会议中心举办</div>
+              <div class="news-excerpt">大会以"数字赋能·生态共赢"为主题，邀请200+企业高管、50+投资机构共话产业未来。早鸟票限时优惠中。</div>
+            </div>
+            <div class="news-meta"><span class="tag tag-red">活动通知</span><span class="source">平台运营</span><span>2026-06-11</span><span>2.8k 阅读</span></div>
+          </div>
+        </a>
+
+        <a href="news-detail.html" class="news-item-h">
+          <div class="news-thumb" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-size:2rem">📈</div>
+          <div class="news-info">
+            <div>
+              <div class="news-title">数联科技入选2026年度瞪羚企业名单，连续三年营收增长超50%</div>
+              <div class="news-excerpt">凭借在企业数据服务领域的持续创新和快速增长，数联科技获得省级瞪羚企业认定，成为行业标杆。</div>
+            </div>
+            <div class="news-meta"><span class="tag tag-green">企业动态</span><span class="source">数联科技</span><span>2026-06-10</span><span>1.2k 阅读</span></div>
+          </div>
+        </a>
+
+        <a href="news-detail.html" class="news-item-h">
+          <div class="news-thumb" style="background:linear-gradient(135deg,#fef9c3,#fde68a);display:flex;align-items:center;justify-content:center;font-size:2rem">🔬</div>
+          <div class="news-info">
+            <div>
+              <div class="news-title">精准检测获CNAS实验室认可扩展资质，新增三项检测能力</div>
+              <div class="news-excerpt">此次扩展涵盖环境检测、食品检测和材料检测三大领域，标志公司检测服务能力进一步提升。</div>
+            </div>
+            <div class="news-meta"><span class="tag tag-green">企业动态</span><span class="source">精准检测</span><span>2026-06-09</span><span>860 阅读</span></div>
+          </div>
+        </a>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <span class="disabled">上一页</span>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <span>...</span>
+          <a href="#">28</a>
+          <a href="#">下一页</a>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div>
+        <div class="sidebar-widget">
+          <div class="widget-title">🔥 热门资讯</div>
+          <div class="widget-list">
+            <a href="news-detail.html"><span class="rank top">1</span>企业数字化转型十大关键指标</a>
+            <a href="news-detail.html"><span class="rank top">2</span>2026年中小企业融资政策盘点</a>
+            <a href="news-detail.html"><span class="rank top">3</span>AI重塑企业运营管理模式</a>
+            <a href="news-detail.html"><span class="rank normal">4</span>环评行业数字化升级路径</a>
+            <a href="news-detail.html"><span class="rank normal">5</span>科技型中小企业申报指南</a>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title">📅 时间归档</div>
+          <div class="widget-list">
+            <a href="#">2026年6月 (156)</a>
+            <a href="#">2026年5月 (203)</a>
+            <a href="#">2026年4月 (189)</a>
+            <a href="#">2026年3月 (172)</a>
+            <a href="#">2026年2月 (148)</a>
+            <a href="#">2026年1月 (134)</a>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title">🏷️ 热门标签</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <a href="#" class="tag tag-blue">数字化转型</a>
+            <a href="#" class="tag tag-green">中小企业</a>
+            <a href="#" class="tag tag-orange">政策解读</a>
+            <a href="#" class="tag tag-blue">人工智能</a>
+            <a href="#" class="tag tag-green">融资</a>
+            <a href="#" class="tag tag-orange">环评</a>
+            <a href="#" class="tag tag-blue">高新技术企业</a>
+            <a href="#" class="tag tag-green">招投标</a>
+            <a href="#" class="tag tag-gray">知识产权</a>
+            <a href="#" class="tag tag-blue">RPA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-icon">企</span>企信聚合</div>
+        <p>多企业资讯聚合门户，集中展示各入驻企业发布的官方资讯、动态、公告、活动等内容，提供分类浏览、搜索、企业专区等一站式服务。</p>
+      </div>
+      <div class="footer-col"><h4>资讯中心</h4><a href="news-list.html?cat=industry">行业资讯</a><a href="news-list.html?cat=dynamic">企业动态</a><a href="news-list.html?cat=policy">政策公告</a><a href="news-list.html?cat=activity">活动通知</a><a href="news-list.html?cat=product">产品资讯</a></div>
+      <div class="footer-col"><h4>平台服务</h4><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="sitemap.html">网站地图</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="#">客服热线：400-888-0000</a><a href="#">商务合作：biz@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 企信聚合平台 版权所有</span><span><a href="#">京ICP备XXXXXXXX号-1</a> | <a href="#">京公网安备XXXXXXXXXXXXXX号</a></span></div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+</body>
+</html>

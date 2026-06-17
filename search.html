@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>搜索结果 - 企信聚合</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo"><span class="logo-icon">企</span>企信聚合</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a>
+      <a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a>
+    </nav>
+    <div class="header-right">
+      <form class="header-search search-form" action="search.html">
+        <input type="text" name="q" placeholder="搜索资讯、企业..." class="search-input-from-url" value="数字化转型">
+        <button type="submit"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      </form>
+      <a href="login.html" class="btn btn-primary btn-sm">登录</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" style="padding:6px"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobile-drawer" class="mobile-drawer">
+  <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+  <div style="margin-top:40px" class="mobile-nav">
+    <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="login.html">登录</a>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>搜索结果</span></div>
+
+    <!-- Search Summary -->
+    <div style="margin-bottom:24px">
+      <h1 style="font-size:1.3rem;font-weight:600;margin-bottom:6px">
+        搜索 "<span style="color:var(--color-primary)">数字化转型</span>" 的结果
+      </h1>
+      <p style="font-size:.85rem;color:var(--color-text-secondary)">共找到 86 条相关资讯</p>
+    </div>
+
+    <!-- Advanced Filter -->
+    <div class="filter-bar">
+      <span class="filter-label">高级筛选：</span>
+      <select>
+        <option value="">全部分类</option>
+        <option>行业资讯</option>
+        <option>企业动态</option>
+        <option>政策公告</option>
+        <option>活动通知</option>
+        <option>产品资讯</option>
+      </select>
+      <select>
+        <option value="">全部时间</option>
+        <option>今天</option>
+        <option>近7天</option>
+        <option>近30天</option>
+        <option>近3个月</option>
+        <option>近半年</option>
+        <option>近1年</option>
+      </select>
+      <select>
+        <option value="">全部企业</option>
+        <option>智云科技</option>
+        <option>数联科技</option>
+        <option>创信软通</option>
+        <option>绿环检测</option>
+      </select>
+      <span style="flex:1"></span>
+      <select style="width:120px">
+        <option>相关度排序</option>
+        <option>最新发布</option>
+        <option>最多阅读</option>
+      </select>
+    </div>
+
+    <!-- Results -->
+    <div>
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-size:2rem">📊</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">深度解读：中小企业<span style="color:var(--color-primary);font-weight:700">数字化转型</span>中的"数据孤岛"难题如何破解？</div>
+            <div class="news-excerpt">企业数字化转型中最大的痛点不是技术，而是数据。本文从数据治理、系统对接、标准化建设三个维度，系统分析破解数据孤岛的方法论与实践路径。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-blue">行业资讯</span><span class="source">企信研究院</span><span>2026-06-14</span><span>2.4k 阅读</span></div>
+        </div>
+      </a>
+
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);display:flex;align-items:center;justify-content:center;font-size:2rem">📋</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">重磅！国务院印发《关于加快推进企业<span style="color:var(--color-primary);font-weight:700">数字化转型</span>的指导意见》</div>
+            <div class="news-excerpt">指导意见从基础设施、数据要素、技术创新、安全保障等六大方面提出20条具体措施，全面推动中小企业数字化转型。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-orange">政策公告</span><span class="source">国务院</span><span>2026-06-15</span><span>5.6k 阅读</span></div>
+        </div>
+      </a>
+
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#ffedd5,#fdba74);display:flex;align-items:center;justify-content:center;font-size:2rem">📋</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">工信部发布中小企业<span style="color:var(--color-primary);font-weight:700">数字化转型</span>试点城市名单，新增15城入选</div>
+            <div class="news-excerpt">第三批试点城市名单公布，每个城市将获得不超过1亿元的财政支持，推动区域中小企业数字化进程加速。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-orange">政策公告</span><span class="source">工信部</span><span>2026-06-13</span><span>3.2k 阅读</span></div>
+        </div>
+      </a>
+
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);display:flex;align-items:center;justify-content:center;font-size:2rem">🏢</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">华为云发布面向中小企业的"<span style="color:var(--color-primary);font-weight:700">数字化</span>"解决方案套件</div>
+            <div class="news-excerpt">新方案整合云基础设施、SaaS应用和行业解决方案，以轻量化、低成本的方式帮助中小企业快速完成数字化转型。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-green">企业动态</span><span class="source">华为云</span><span>2026-06-13</span><span>1.8k 阅读</span></div>
+        </div>
+      </a>
+
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#fee2e2,#fecaca);display:flex;align-items:center;justify-content:center;font-size:2rem">🎉</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">2026企业服务生态大会聚焦<span style="color:var(--color-primary);font-weight:700">数字化</span>赋能与生态共赢</div>
+            <div class="news-excerpt">大会以"数字赋能·生态共赢"为主题，邀请200+企业高管、50+投资机构共话数字化转型新路径。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-red">活动通知</span><span class="source">平台运营</span><span>2026-06-11</span><span>2.8k 阅读</span></div>
+        </div>
+      </a>
+
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);display:flex;align-items:center;justify-content:center;font-size:2rem">💡</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">RPA+AI：自动化办公新范式，<span style="color:var(--color-primary);font-weight:700">数字化</span>转型效率新引擎</div>
+            <div class="news-excerpt">RPA与AI的深度融合正在重新定义企业自动化办公，从流程自动化到智能决策，全面助力企业数字化转型。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-blue">产品资讯</span><span class="source">智云科技</span><span>2026-06-05</span><span>1.6k 阅读</span></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="pagination">
+      <span class="disabled">上一页</span>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">下一页</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-icon">企</span>企信聚合</div><p>多企业资讯聚合门户，一站式企业资讯阅读与信息查询服务。</p></div>
+      <div class="footer-col"><h4>资讯中心</h4><a href="news-list.html?cat=industry">行业资讯</a><a href="news-list.html?cat=dynamic">企业动态</a><a href="news-list.html?cat=policy">政策公告</a><a href="news-list.html?cat=activity">活动通知</a><a href="news-list.html?cat=product">产品资讯</a></div>
+      <div class="footer-col"><h4>平台服务</h4><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="sitemap.html">网站地图</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="#">客服热线：400-888-0000</a><a href="#">商务合作：biz@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 企信聚合平台 版权所有</span><span><a href="#">京ICP备XXXXXXXX号-1</a> | <a href="#">京公网安备XXXXXXXXXXXXXX号</a></span></div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+</body>
+</html>

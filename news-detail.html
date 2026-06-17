@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>资讯详情 - 企信聚合</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo"><span class="logo-icon">企</span>企信聚合</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a>
+      <a href="news-list.html" class="active">资讯中心</a>
+      <a href="categories.html">分类频道</a>
+      <a href="enterprise-list.html">入驻企业</a>
+      <a href="about.html">平台介绍</a>
+      <a href="help.html">帮助中心</a>
+    </nav>
+    <div class="header-right">
+      <form class="header-search search-form" action="search.html">
+        <input type="text" name="q" placeholder="搜索资讯、企业..." class="search-input-from-url">
+        <button type="submit"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      </form>
+      <a href="login.html" class="btn btn-primary btn-sm">登录</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" style="padding:6px"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobile-drawer" class="mobile-drawer">
+  <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+  <div style="margin-top:40px" class="mobile-nav">
+    <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="login.html">登录</a>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">首页</a><span>/</span><a href="news-list.html">资讯中心</a><span>/</span><a href="news-list.html?cat=industry">行业资讯</a><span>/</span><span>正文</span>
+    </div>
+
+    <div class="page-layout">
+      <!-- Article Content -->
+      <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:36px">
+        <div class="article-header">
+          <h1>2026年环评行业市场规模突破800亿，数字化渗透率显著提升</h1>
+          <div class="article-meta">
+            <span class="tag tag-blue">行业资讯</span>
+            <a href="enterprise-zone.html?id=1" class="source">企信研究院</a>
+            <span>2026-06-15 14:30</span>
+            <span>2.4k 阅读</span>
+            <span>128 收藏</span>
+          </div>
+        </div>
+
+        <div class="article-body">
+          <p>随着环保政策的持续趋严和企业环保意识的不断增强，环评行业在2026年迎来新一轮增长。根据企信研究院最新发布的《2026年中国环评行业发展白皮书》，行业整体市场规模已突破800亿元，较2023年增长超过45%。</p>
+
+          <div style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);border-radius:var(--radius-lg);height:280px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--color-primary);margin:24px 0">
+            📊 环评行业市场规模增长趋势图 (2019-2026)
+          </div>
+
+          <h2>数字化渗透率快速攀升</h2>
+          <p>白皮书数据显示，数字化工具在环评领域的渗透率已从2023年的32%提升至2026年的58%，三年间实现了近一倍的增长。这主要得益于以下几个因素：</p>
+
+          <blockquote>
+            数字化不仅是工具的升级，更是环评服务模式的根本性变革。从数据采集、模型运算到报告生成，全流程数字化使环评效率提升了60%以上。 —— 企信研究院首席分析师
+          </blockquote>
+
+          <h3>1. 政策驱动</h3>
+          <p>生态环境部持续推动"互联网+环保"战略，要求环评报告必须通过数字化平台提交，这一政策直接推动了行业数字化进程。各地环保部门纷纷建设在线审批系统，倒逼环评机构进行数字化转型。</p>
+
+          <h3>2. 技术成熟</h3>
+          <p>GIS地理信息系统、大数据分析、AI辅助评估等技术在环评领域的应用日趋成熟。特别是大模型技术的引入，使得环境影响预测的准确度和效率都有了质的飞跃。</p>
+
+          <h3>3. 市场需求</h3>
+          <p>企业对环评服务的要求从"合规导向"转向"效率导向"，更倾向于选择能够快速交付、数据透明的数字化环评服务商。这种需求变化正在重塑行业竞争格局。</p>
+
+          <div style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);border-radius:var(--radius-lg);height:220px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--color-secondary);margin:24px 0">
+            📈 数字化渗透率对比图 (2023 vs 2026)
+          </div>
+
+          <h2>行业竞争格局变化</h2>
+          <p>数字化能力的差异正在加剧行业分化。头部环评机构凭借技术优势不断扩大市场份额，而传统中小机构面临转型压力。白皮书指出，拥有完整数字化工具链的环评机构，其项目交付周期平均缩短40%，客户满意度提升35%。</p>
+
+          <p>展望未来，随着碳达峰碳中和目标的深入推进，环评行业将迎来更广阔的发展空间。预计到2028年，行业市场规模将突破1200亿元，数字化渗透率有望达到80%以上。</p>
+        </div>
+
+        <!-- Actions -->
+        <div class="article-actions">
+          <button class="action-btn" onclick="toggleAction(this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/></svg>
+            点赞 <span class="count">86</span>
+          </button>
+          <button class="action-btn" onclick="toggleAction(this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+            收藏 <span class="count">128</span>
+          </button>
+          <button class="action-btn">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13"/></svg>
+            分享
+          </button>
+          <span style="flex:1"></span>
+          <span style="font-size:.8rem;color:var(--color-text-light)">责任编辑：企信编辑部</span>
+        </div>
+
+        <!-- Comment Section -->
+        <div style="margin-top:32px;border-top:1px solid var(--color-border-light);padding-top:28px">
+          <h3 style="font-size:1.1rem;font-weight:600;margin-bottom:20px">评论 (24)</h3>
+          <div style="display:flex;gap:12px;margin-bottom:24px">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--color-primary-light);display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:600;color:var(--color-primary);flex-shrink:0">我</div>
+            <div style="flex:1">
+              <textarea class="form-input" placeholder="写下你的评论..." style="min-height:60px;font-size:.85rem"></textarea>
+              <div style="text-align:right;margin-top:8px"><button class="btn btn-primary btn-sm">发表评论</button></div>
+            </div>
+          </div>
+          <!-- Comment List -->
+          <div style="display:flex;gap:12px;padding:16px 0;border-bottom:1px solid var(--color-border-light)">
+            <div style="width:36px;height:36px;border-radius:50%;background:#ecfdf5;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:600;color:#0e9f6e;flex-shrink:0">张</div>
+            <div>
+              <div style="font-size:.85rem"><strong>张工</strong> <span style="color:var(--color-text-light);font-size:.75rem;margin-left:8px">2026-06-15 16:20</span></div>
+              <p style="font-size:.85rem;color:var(--color-text-secondary);margin-top:6px;line-height:1.6">非常详实的分析，数字化确实是环评行业的大趋势。我们公司也在推进数字化转型，确实感受到效率提升明显。</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;padding:16px 0">
+            <div style="width:36px;height:36px;border-radius:50%;background:#fff7ed;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:600;color:#ff6b35;flex-shrink:0">李</div>
+            <div>
+              <div style="font-size:.85rem"><strong>李经理</strong> <span style="color:var(--color-text-light);font-size:.75rem;margin-left:8px">2026-06-15 18:05</span></div>
+              <p style="font-size:.85rem;color:var(--color-text-secondary);margin-top:6px;line-height:1.6">期待看到更细分的行业数据，比如不同区域的环评市场规模对比。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div>
+        <!-- Related News -->
+        <div class="sidebar-widget">
+          <div class="widget-title">📌 相关资讯</div>
+          <div class="widget-list">
+            <a href="news-detail.html">环评行业数字化升级路径分析</a>
+            <a href="news-detail.html">2026年环境监测行业趋势报告</a>
+            <a href="news-detail.html">绿环检测获CNAS资质扩展</a>
+            <a href="news-detail.html">企业环保合规指南更新发布</a>
+            <a href="news-detail.html">碳市场扩容对环评业务的影响</a>
+          </div>
+        </div>
+
+        <!-- Same Category -->
+        <div class="sidebar-widget">
+          <div class="widget-title">📂 同分类资讯</div>
+          <div class="widget-list">
+            <a href="news-detail.html">中小企业数字化转型十大关键指标</a>
+            <a href="news-detail.html">RPA+AI：自动化办公新范式</a>
+            <a href="news-detail.html">招投标电子化改革加速推进</a>
+            <a href="news-detail.html">金融科技助力中小企业融资</a>
+          </div>
+        </div>
+
+        <!-- Same Enterprise -->
+        <div class="sidebar-widget">
+          <div class="widget-title">🏢 同企业资讯</div>
+          <div class="widget-list">
+            <a href="news-detail.html">企信研究院发布Q2行业洞察</a>
+            <a href="news-detail.html">数据治理白皮书2026版发布</a>
+            <a href="news-detail.html">中小企业融资新路径研究</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-icon">企</span>企信聚合</div><p>多企业资讯聚合门户，集中展示各入驻企业发布的官方资讯、动态、公告、活动等内容。</p></div>
+      <div class="footer-col"><h4>资讯中心</h4><a href="news-list.html?cat=industry">行业资讯</a><a href="news-list.html?cat=dynamic">企业动态</a><a href="news-list.html?cat=policy">政策公告</a><a href="news-list.html?cat=activity">活动通知</a><a href="news-list.html?cat=product">产品资讯</a></div>
+      <div class="footer-col"><h4>平台服务</h4><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="sitemap.html">网站地图</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="#">客服热线：400-888-0000</a><a href="#">商务合作：biz@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 企信聚合平台 版权所有</span><span><a href="#">京ICP备XXXXXXXX号-1</a> | <a href="#">京公网安备XXXXXXXXXXXXXX号</a></span></div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+</body>
+</html>

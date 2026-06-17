@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>入驻企业 - 企信聚合</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo"><span class="logo-icon">企</span>企信聚合</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a>
+      <a href="enterprise-list.html" class="active">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a>
+    </nav>
+    <div class="header-right">
+      <form class="header-search search-form" action="search.html">
+        <input type="text" name="q" placeholder="搜索资讯、企业..." class="search-input-from-url">
+        <button type="submit"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      </form>
+      <a href="login.html" class="btn btn-primary btn-sm">登录</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" style="padding:6px"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobile-drawer" class="mobile-drawer">
+  <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+  <div style="margin-top:40px" class="mobile-nav">
+    <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="login.html">登录</a>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>入驻企业</span></div>
+
+    <!-- Page Title -->
+    <div style="margin-bottom:24px">
+      <h1 style="font-size:1.5rem;font-weight:700;margin-bottom:6px">入驻企业</h1>
+      <p style="font-size:.9rem;color:var(--color-text-secondary)">共 24 家入驻企业，持续更新中</p>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter-bar">
+      <span class="filter-label">行业筛选：</span>
+      <select>
+        <option value="">全部行业</option>
+        <option>软件开发</option>
+        <option>系统集成</option>
+        <option>环评监测</option>
+        <option>检测认证</option>
+        <option>咨询服务</option>
+        <option>知识产权</option>
+        <option>金融服务</option>
+      </select>
+      <select>
+        <option value="">全部规模</option>
+        <option>50人以下</option>
+        <option>50-200人</option>
+        <option>200-500人</option>
+        <option>500人以上</option>
+      </select>
+      <span style="flex:1"></span>
+      <select style="width:120px">
+        <option>最新入驻</option>
+        <option>资讯最多</option>
+        <option>阅读最多</option>
+      </select>
+    </div>
+
+    <!-- Enterprise Grid -->
+    <div class="grid grid-3 gap-3">
+      <a href="enterprise-zone.html?id=1" class="enterprise-card" style="text-align:left;padding:24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div class="ent-logo">智</div>
+          <div><div class="ent-name" style="text-align:left">智云科技</div><div style="font-size:.75rem;color:var(--color-text-light)">北京 · 200-500人</div></div>
+        </div>
+        <div class="ent-desc">企业智能运维与数据分析服务商，专注AI赋能企业数字化转型</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span class="tag tag-blue">软件开发</span><span class="tag tag-green">智能运维</span></div>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border-light);font-size:.8rem;color:var(--color-text-light)">
+          <span>128 篇资讯</span><span>2.4万 阅读</span>
+        </div>
+      </a>
+
+      <a href="enterprise-zone.html?id=2" class="enterprise-card" style="text-align:left;padding:24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div class="ent-logo" style="background:#ecfdf5;color:#0e9f6e">数</div>
+          <div><div class="ent-name" style="text-align:left">数联科技</div><div style="font-size:.75rem;color:var(--color-text-light)">上海 · 50-200人</div></div>
+        </div>
+        <div class="ent-desc">企业数据治理与集成解决方案提供商，连续三年营收增长超50%</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span class="tag tag-blue">数据分析</span><span class="tag tag-orange">数据治理</span></div>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border-light);font-size:.8rem;color:var(--color-text-light)">
+          <span>96 篇资讯</span><span>1.8万 阅读</span>
+        </div>
+      </a>
+
+      <a href="enterprise-zone.html?id=3" class="enterprise-card" style="text-align:left;padding:24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div class="ent-logo" style="background:#fff7ed;color:#ff6b35">环</div>
+          <div><div class="ent-name" style="text-align:left">绿环检测</div><div style="font-size:.75rem;color:var(--color-text-light)">广州 · 50-200人</div></div>
+        </div>
+        <div class="ent-desc">环境监测与环评一体化服务，覆盖环境影响评价全流程</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span class="tag tag-orange">环评监测</span><span class="tag tag-green">检测认证</span></div>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border-light);font-size:.8rem;color:var(--color-text-light)">
+          <span>74 篇资讯</span><span>1.2万 阅读</span>
+        </div>
+      </a>
+
+      <a href="enterprise-zone.html?id=4" class="enterprise-card" style="text-align:left;padding:24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div class="ent-logo" style="background:#f0e6ff;color:#7c3aed">创</div>
+          <div><div class="ent-name" style="text-align:left">创信软通</div><div style="font-size:.75rem;color:var(--color-text-light)">深圳 · 200-500人</div></div>
+        </div>
+        <div class="ent-desc">软件开发与系统集成服务商，服务覆盖政务、金融、制造等领域</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span class="tag tag-blue">软件开发</span><span class="tag tag-orange">系统集成</span></div>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border-light);font-size:.8rem;color:var(--color-text-light)">
+          <span>112 篇资讯</span><span>2.1万 阅读</span>
+        </div>
+      </a>
+
+      <a href="enterprise-zone.html?id=5" class="enterprise-card" style="text-align:left;padding:24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div class="ent-logo" style="background:#fef2f2;color:#e02424">融</div>
+          <div><div class="ent-name" style="text-align:left">融策咨询</div><div style="font-size:.75rem;color:var(--color-text-light)">成都 · 50人以下</div></div>
+        </div>
+        <div class="ent-desc">招投标咨询与项目申报服务，累计协助企业获取补贴超5亿元</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span class="tag tag-green">咨询服务</span><span class="tag tag-orange">招投标</span></div>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border-light);font-size:.8rem;color:var(--color-text-light)">
+          <span>68 篇资讯</span><span>9,600 阅读</span>
+        </div>
+      </a>
+
+      <a href="enterprise-zone.html?id=6" class="enterprise-card" style="text-align:left;padding:24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div class="ent-logo" style="background:#fef9c3;color:#ca8a04">科</div>
+          <div><div class="ent-name" style="text-align:left">科达专利</div><div style="font-size:.75rem;color:var(--color-text-light)">杭州 · 50-200人</div></div>
+        </div>
+        <div class="ent-desc">知识产权代理与科技服务，年代理专利申请超2000件</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span class="tag tag-blue">知识产权</span><span class="tag tag-green">科技服务</span></div>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border-light);font-size:.8rem;color:var(--color-text-light)">
+          <span>85 篇资讯</span><span>1.4万 阅读</span>
+        </div>
+      </a>
+
+      <a href="enterprise-zone.html?id=7" class="enterprise-card" style="text-align:left;padding:24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div class="ent-logo" style="background:#e0f2fe;color:#0284c7">测</div>
+          <div><div class="ent-name" style="text-align:left">精准检测</div><div style="font-size:.75rem;color:var(--color-text-light)">武汉 · 50-200人</div></div>
+        </div>
+        <div class="ent-desc">第三方检测与认证服务，拥有CNAS认可资质实验室</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span class="tag tag-green">检测认证</span><span class="tag tag-orange">质量服务</span></div>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border-light);font-size:.8rem;color:var(--color-text-light)">
+          <span>56 篇资讯</span><span>8,200 阅读</span>
+        </div>
+      </a>
+
+      <a href="enterprise-zone.html?id=8" class="enterprise-card" style="text-align:left;padding:24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div class="ent-logo" style="background:#fce7f3;color:#db2777">慧</div>
+          <div><div class="ent-name" style="text-align:left">慧策云商</div><div style="font-size:.75rem;color:var(--color-text-light)">南京 · 50人以下</div></div>
+        </div>
+        <div class="ent-desc">企业电商与数字化转型顾问，帮助传统企业开拓线上渠道</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span class="tag tag-blue">数字化转型</span><span class="tag tag-green">电商服务</span></div>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border-light);font-size:.8rem;color:var(--color-text-light)">
+          <span>43 篇资讯</span><span>6,800 阅读</span>
+        </div>
+      </a>
+
+      <a href="enterprise-zone.html?id=9" class="enterprise-card" style="text-align:left;padding:24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div class="ent-logo" style="background:#dbeafe;color:#1a56db">安</div>
+          <div><div class="ent-name" style="text-align:left">安盾网安</div><div style="font-size:.75rem;color:var(--color-text-light)">西安 · 50-200人</div></div>
+        </div>
+        <div class="ent-desc">网络安全与等保测评服务，为企业提供全方位安全防护方案</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span class="tag tag-red">网络安全</span><span class="tag tag-orange">等保测评</span></div>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border-light);font-size:.8rem;color:var(--color-text-light)">
+          <span>61 篇资讯</span><span>7,400 阅读</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="pagination">
+      <span class="disabled">上一页</span>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">下一页</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-icon">企</span>企信聚合</div><p>多企业资讯聚合门户，一站式企业资讯阅读与信息查询服务。</p></div>
+      <div class="footer-col"><h4>资讯中心</h4><a href="news-list.html?cat=industry">行业资讯</a><a href="news-list.html?cat=dynamic">企业动态</a><a href="news-list.html?cat=policy">政策公告</a><a href="news-list.html?cat=activity">活动通知</a><a href="news-list.html?cat=product">产品资讯</a></div>
+      <div class="footer-col"><h4>平台服务</h4><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="sitemap.html">网站地图</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="#">客服热线：400-888-0000</a><a href="#">商务合作：biz@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 企信聚合平台 版权所有</span><span><a href="#">京ICP备XXXXXXXX号-1</a> | <a href="#">京公网安备XXXXXXXXXXXXXX号</a></span></div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>智云科技 - 企业专区 - 企信聚合</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo"><span class="logo-icon">企</span>企信聚合</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a>
+      <a href="enterprise-list.html" class="active">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a>
+    </nav>
+    <div class="header-right">
+      <form class="header-search search-form" action="search.html">
+        <input type="text" name="q" placeholder="搜索资讯、企业..." class="search-input-from-url">
+        <button type="submit"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      </form>
+      <a href="login.html" class="btn btn-primary btn-sm">登录</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" style="padding:6px"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobile-drawer" class="mobile-drawer">
+  <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+  <div style="margin-top:40px" class="mobile-nav">
+    <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="login.html">登录</a>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">首页</a><span>/</span><a href="enterprise-list.html">入驻企业</a><span>/</span><span>智云科技</span>
+    </div>
+
+    <!-- Enterprise Profile Header -->
+    <div style="background:var(--color-bg);border-radius:var(--radius-xl);border:1px solid var(--color-border-light);overflow:hidden;margin-bottom:28px">
+      <div style="height:160px;background:linear-gradient(135deg,#1a56db 0%,#3b82f6 50%,#60a5fa 100%);position:relative">
+        <div style="position:absolute;bottom:-40px;left:36px">
+          <div style="width:80px;height:80px;border-radius:var(--radius-lg);background:#fff;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:var(--color-primary);box-shadow:var(--shadow-lg);border:4px solid #fff">智</div>
+        </div>
+      </div>
+      <div style="padding:56px 36px 28px">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px">
+          <div>
+            <h1 style="font-size:1.5rem;font-weight:700;margin-bottom:6px">智云科技</h1>
+            <div style="font-size:.85rem;color:var(--color-text-secondary);margin-bottom:12px">企业智能运维与数据分析服务商 | 成立于2018年 | 北京</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <span class="tag tag-blue">软件开发</span>
+              <span class="tag tag-green">智能运维</span>
+              <span class="tag tag-orange">数据分析</span>
+              <span class="tag tag-gray">瞪羚企业</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px">
+            <button class="btn btn-outline btn-sm">+ 关注企业</button>
+            <button class="btn btn-primary btn-sm">联系企业</button>
+          </div>
+        </div>
+        <div style="margin-top:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;padding-top:20px;border-top:1px solid var(--color-border-light)">
+          <div><div style="font-size:1.4rem;font-weight:700;color:var(--color-primary)">128</div><div style="font-size:.8rem;color:var(--color-text-light)">发布资讯</div></div>
+          <div><div style="font-size:1.4rem;font-weight:700;color:var(--color-primary)">2.4万</div><div style="font-size:.8rem;color:var(--color-text-light)">总阅读量</div></div>
+          <div><div style="font-size:1.4rem;font-weight:700;color:var(--color-primary)">1,560</div><div style="font-size:.8rem;color:var(--color-text-light)">关注者</div></div>
+          <div><div style="font-size:1.4rem;font-weight:700;color:var(--color-primary)">96%</div><div style="font-size:.8rem;color:var(--color-text-light)">好评率</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enterprise Intro -->
+    <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:28px;margin-bottom:28px">
+      <div class="section-title" style="margin-bottom:16px"><span><span class="title-bar"></span>企业简介</span></div>
+      <p style="font-size:.9rem;color:var(--color-text-secondary);line-height:1.8">
+        智云科技成立于2018年，是国内领先的企业智能运维与数据分析服务商。公司专注于利用人工智能和大数据技术，为企业提供IT基础设施监控、业务性能管理、智能告警等一站式运维解决方案。目前服务覆盖金融、制造、零售等多个行业，累计服务企业客户超过3000家。
+      </p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px">
+        <div style="display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--color-text-secondary)">
+          <svg width="16" height="16" fill="none" stroke="var(--color-primary)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          北京市海淀区中关村科技园区
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--color-text-secondary)">
+          <svg width="16" height="16" fill="none" stroke="var(--color-primary)" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          contact@zhiyun-tech.com
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--color-text-secondary)">
+          <svg width="16" height="16" fill="none" stroke="var(--color-primary)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          010-8888-6666
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--color-text-secondary)">
+          <svg width="16" height="16" fill="none" stroke="var(--color-primary)" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          www.zhiyun-tech.com
+        </div>
+      </div>
+    </div>
+
+    <!-- Enterprise News -->
+    <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:28px">
+      <div class="section-title" style="margin-bottom:16px">
+        <span><span class="title-bar"></span>企业资讯</span>
+        <span style="font-size:.85rem;font-weight:400;color:var(--color-text-light)">共 128 篇</span>
+      </div>
+
+      <div class="tabs" style="margin-bottom:20px">
+        <span class="tab-item active">全部</span>
+        <span class="tab-item">企业动态</span>
+        <span class="tab-item">产品资讯</span>
+        <span class="tab-item">活动通知</span>
+      </div>
+
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);display:flex;align-items:center;justify-content:center;font-size:2rem">🏢</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">智云科技完成B轮融资2亿元，加速布局企业智能运维赛道</div>
+            <div class="news-excerpt">本轮融资由红杉资本领投，资金将用于产品研发和市场拓展，预计年底团队规模翻倍。公司估值已达15亿元。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-green">企业动态</span><span>2026-06-14</span><span>1.8k 阅读</span></div>
+        </div>
+      </a>
+
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);display:flex;align-items:center;justify-content:center;font-size:2rem">💡</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">智云运维平台3.0全新上线，AI赋能企业运维效率提升200%</div>
+            <div class="news-excerpt">全新智能分析引擎、自动化故障发现、根因分析等核心功能全面升级，支持多云混合环境统一管理。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-blue">产品资讯</span><span>2026-06-08</span><span>2.1k 阅读</span></div>
+        </div>
+      </a>
+
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#fee2e2,#fecaca);display:flex;align-items:center;justify-content:center;font-size:2rem">🎉</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">智云科技荣获"2026年度最具创新力企业"称号</div>
+            <div class="news-excerpt">在第十届中国企业服务大会上，智云科技凭借在智能运维领域的持续创新荣获此项殊荣。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-green">企业动态</span><span>2026-06-01</span><span>1.5k 阅读</span></div>
+        </div>
+      </a>
+
+      <a href="news-detail.html" class="news-item-h">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-size:2rem">📊</div>
+        <div class="news-info">
+          <div>
+            <div class="news-title">智云科技发布《2026企业运维现状白皮书》</div>
+            <div class="news-excerpt">白皮书基于3000+企业调研数据，全面分析了当前企业运维面临的挑战与数字化转型路径。</div>
+          </div>
+          <div class="news-meta"><span class="tag tag-blue">产品资讯</span><span>2026-05-25</span><span>3.6k 阅读</span></div>
+        </div>
+      </a>
+
+      <div class="pagination">
+        <span class="disabled">上一页</span>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">下一页</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-icon">企</span>企信聚合</div><p>多企业资讯聚合门户，集中展示各入驻企业发布的官方资讯、动态、公告、活动等内容。</p></div>
+      <div class="footer-col"><h4>资讯中心</h4><a href="news-list.html?cat=industry">行业资讯</a><a href="news-list.html?cat=dynamic">企业动态</a><a href="news-list.html?cat=policy">政策公告</a><a href="news-list.html?cat=activity">活动通知</a><a href="news-list.html?cat=product">产品资讯</a></div>
+      <div class="footer-col"><h4>平台服务</h4><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="sitemap.html">网站地图</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="#">客服热线：400-888-0000</a><a href="#">商务合作：biz@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 企信聚合平台 版权所有</span><span><a href="#">京ICP备XXXXXXXX号-1</a> | <a href="#">京公网安备XXXXXXXXXXXXXX号</a></span></div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+</body>
+</html>

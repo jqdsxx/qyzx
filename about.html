@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>平台介绍 - 企信聚合</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo"><span class="logo-icon">企</span>企信聚合</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a>
+      <a href="enterprise-list.html">入驻企业</a><a href="about.html" class="active">平台介绍</a><a href="help.html">帮助中心</a>
+    </nav>
+    <div class="header-right">
+      <form class="header-search search-form" action="search.html">
+        <input type="text" name="q" placeholder="搜索资讯、企业..." class="search-input-from-url">
+        <button type="submit"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      </form>
+      <a href="login.html" class="btn btn-primary btn-sm">登录</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" style="padding:6px"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobile-drawer" class="mobile-drawer">
+  <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+  <div style="margin-top:40px" class="mobile-nav">
+    <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="login.html">登录</a>
+  </div>
+</div>
+
+<main>
+  <!-- Hero -->
+  <div style="background:linear-gradient(135deg,#1a56db,#3b82f6,#60a5fa);padding:80px 20px;text-align:center;color:#fff">
+    <div class="container">
+      <h1 style="font-size:2.2rem;font-weight:800;margin-bottom:16px">关于企信聚合</h1>
+      <p style="font-size:1.1rem;opacity:.9;max-width:640px;margin:0 auto;line-height:1.7">多企业资讯聚合门户，集中展示各入驻企业发布的官方资讯、动态、公告、活动等内容，为您提供一站式资讯阅读与企业信息查询服务</p>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:60px;padding-bottom:60px">
+    <!-- Platform Features -->
+    <div style="text-align:center;margin-bottom:56px">
+      <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:10px">平台核心功能</h2>
+      <p style="font-size:.9rem;color:var(--color-text-secondary)">为企业和用户提供全方位的资讯聚合与信息查询服务</p>
+    </div>
+    <div class="grid grid-4 gap-3" style="margin-bottom:56px">
+      <div style="text-align:center;padding:28px 20px">
+        <div style="width:64px;height:64px;border-radius:var(--radius-lg);background:var(--color-primary-light);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.6rem">📰</div>
+        <h3 style="font-size:1rem;font-weight:600;margin-bottom:8px">资讯聚合</h3>
+        <p style="font-size:.85rem;color:var(--color-text-secondary);line-height:1.6">汇聚多家入驻企业官方发布的资讯、动态、公告、活动等内容，一站式阅读</p>
+      </div>
+      <div style="text-align:center;padding:28px 20px">
+        <div style="width:64px;height:64px;border-radius:var(--radius-lg);background:#ecfdf5;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.6rem">🏢</div>
+        <h3 style="font-size:1rem;font-weight:600;margin-bottom:8px">企业专区</h3>
+        <p style="font-size:.85rem;color:var(--color-text-secondary);line-height:1.6">每家企业拥有专属展示空间，用户可快速了解企业全貌并追踪其最新动态</p>
+      </div>
+      <div style="text-align:center;padding:28px 20px">
+        <div style="width:64px;height:64px;border-radius:var(--radius-lg);background:#fff7ed;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.6rem">🔍</div>
+        <h3 style="font-size:1rem;font-weight:600;margin-bottom:8px">智能搜索</h3>
+        <p style="font-size:.85rem;color:var(--color-text-secondary);line-height:1.6">支持关键词搜索、分类筛选、时间归档等多种方式，精准找到所需资讯</p>
+      </div>
+      <div style="text-align:center;padding:28px 20px">
+        <div style="width:64px;height:64px;border-radius:var(--radius-lg);background:#f0e6ff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.6rem">📊</div>
+        <h3 style="font-size:1rem;font-weight:600;margin-bottom:8px">数据洞察</h3>
+        <p style="font-size:.85rem;color:var(--color-text-secondary);line-height:1.6">提供行业趋势分析和企业数据报告，助力商业决策与行业研判</p>
+      </div>
+    </div>
+
+    <!-- Service Description -->
+    <div style="background:var(--color-bg);border-radius:var(--radius-xl);border:1px solid var(--color-border-light);padding:40px;margin-bottom:48px">
+      <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:20px"><span style="width:4px;height:20px;background:var(--color-primary);border-radius:2px;display:inline-block;margin-right:10px;vertical-align:middle"></span>服务说明</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <h3 style="font-size:1rem;font-weight:600;margin-bottom:10px;color:var(--color-primary)">对于读者</h3>
+          <ul style="font-size:.9rem;color:var(--color-text-secondary);line-height:2">
+            <li>✅ 一站式浏览多家企业官方资讯，无需逐一访问</li>
+            <li>✅ 按分类、企业、时间等多维度精准筛选</li>
+            <li>✅ 关注感兴趣的企业，获取最新动态推送</li>
+            <li>✅ 收藏、分享有价值的资讯内容</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:1rem;font-weight:600;margin-bottom:10px;color:var(--color-primary)">对于企业</h3>
+          <ul style="font-size:.9rem;color:var(--color-text-secondary);line-height:2">
+            <li>✅ 拥有专属企业展示页面，提升品牌曝光度</li>
+            <li>✅ 自主发布资讯、公告、活动等内容</li>
+            <li>✅ 获得精准流量和目标用户关注</li>
+            <li>✅ 查看内容数据表现，优化运营策略</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Usage Rules -->
+    <div style="background:var(--color-bg);border-radius:var(--radius-xl);border:1px solid var(--color-border-light);padding:40px;margin-bottom:48px">
+      <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:20px"><span style="width:4px;height:20px;background:var(--color-primary);border-radius:2px;display:inline-block;margin-right:10px;vertical-align:middle"></span>使用规则</h2>
+      <div style="font-size:.9rem;color:var(--color-text-secondary);line-height:2">
+        <p><strong>1. 内容规范</strong>：所有发布的资讯内容须真实、准确、合法，不得包含虚假信息、侵权内容或违反法律法规的信息。</p>
+        <p><strong>2. 资讯审核</strong>：企业发布的资讯需经平台审核后方可展示，审核周期一般为1-2个工作日。</p>
+        <p><strong>3. 版权声明</strong>：企业发布的资讯版权归原作者所有，转载需注明出处并获得授权。</p>
+        <p><strong>4. 账号管理</strong>：企业账号须妥善保管，不得转让、出借或出售，如发现账号异常请及时联系客服。</p>
+        <p><strong>5. 违规处理</strong>：违反平台规则的企业，平台有权视情节轻重采取警告、限制发布、封禁账号等措施。</p>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center">
+      <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:28px">
+        <div style="font-size:2rem;font-weight:800;color:var(--color-primary)">24</div>
+        <div style="font-size:.85rem;color:var(--color-text-secondary);margin-top:4px">入驻企业</div>
+      </div>
+      <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:28px">
+        <div style="font-size:2rem;font-weight:800;color:var(--color-primary)">3,376</div>
+        <div style="font-size:.85rem;color:var(--color-text-secondary);margin-top:4px">资讯总量</div>
+      </div>
+      <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:28px">
+        <div style="font-size:2rem;font-weight:800;color:var(--color-primary)">56万+</div>
+        <div style="font-size:.85rem;color:var(--color-text-secondary);margin-top:4px">累计阅读</div>
+      </div>
+      <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:28px">
+        <div style="font-size:2rem;font-weight:800;color:var(--color-primary)">8,600+</div>
+        <div style="font-size:.85rem;color:var(--color-text-secondary);margin-top:4px">注册用户</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-icon">企</span>企信聚合</div><p>多企业资讯聚合门户，一站式企业资讯阅读与信息查询服务。</p></div>
+      <div class="footer-col"><h4>资讯中心</h4><a href="news-list.html?cat=industry">行业资讯</a><a href="news-list.html?cat=dynamic">企业动态</a><a href="news-list.html?cat=policy">政策公告</a><a href="news-list.html?cat=activity">活动通知</a><a href="news-list.html?cat=product">产品资讯</a></div>
+      <div class="footer-col"><h4>平台服务</h4><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="sitemap.html">网站地图</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="#">客服热线：400-888-0000</a><a href="#">商务合作：biz@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 企信聚合平台 版权所有</span><span><a href="#">京ICP备XXXXXXXX号-1</a> | <a href="#">京公网安备XXXXXXXXXXXXXX号</a></span></div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+</body>
+</html>

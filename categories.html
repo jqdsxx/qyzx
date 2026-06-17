@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>分类频道 - 企信聚合</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo"><span class="logo-icon">企</span>企信聚合</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a><a href="news-list.html">资讯中心</a>
+      <a href="categories.html" class="active">分类频道</a>
+      <a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a>
+    </nav>
+    <div class="header-right">
+      <form class="header-search search-form" action="search.html">
+        <input type="text" name="q" placeholder="搜索资讯、企业..." class="search-input-from-url">
+        <button type="submit"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      </form>
+      <a href="login.html" class="btn btn-primary btn-sm">登录</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" style="padding:6px"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobile-drawer" class="mobile-drawer">
+  <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+  <div style="margin-top:40px" class="mobile-nav">
+    <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="login.html">登录</a>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>全部分类频道</span></div>
+
+    <!-- Category: Industry -->
+    <section class="section" style="padding-top:0">
+      <div class="section-title"><span><span class="title-bar"></span>📊 行业资讯</span><a href="news-list.html?cat=industry" class="more-link">查看全部 1,286 篇 →</a></div>
+      <div class="grid grid-3 gap-2">
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-size:2rem">📊</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-blue">行业资讯</span><span>2026-06-15</span></div>
+            <div class="card-title">环评行业市场规模突破800亿</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#dbeafe,#93c5fd);display:flex;align-items:center;justify-content:center;font-size:2rem">📈</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-blue">行业资讯</span><span>2026-06-13</span></div>
+            <div class="card-title">检测行业年度报告：市场增速放缓但结构优化</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-size:2rem">🌐</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-blue">行业资讯</span><span>2026-06-10</span></div>
+            <div class="card-title">系统集成行业竞争格局分析与趋势展望</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Category: Enterprise Dynamic -->
+    <section class="section section-white" style="padding:32px 0">
+      <div class="section-title"><span><span class="title-bar"></span>🏢 企业动态</span><a href="news-list.html?cat=dynamic" class="more-link">查看全部 864 篇 →</a></div>
+      <div class="grid grid-3 gap-2">
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);display:flex;align-items:center;justify-content:center;font-size:2rem">🏢</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-green">企业动态</span><span>2026-06-14</span></div>
+            <div class="card-title">智云科技完成B轮融资2亿元</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#6ee7b7);display:flex;align-items:center;justify-content:center;font-size:2rem">📈</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-green">企业动态</span><span>2026-06-10</span></div>
+            <div class="card-title">数联科技入选瞪羚企业名单</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);display:flex;align-items:center;justify-content:center;font-size:2rem">🔬</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-green">企业动态</span><span>2026-06-09</span></div>
+            <div class="card-title">精准检测获CNAS资质扩展</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Category: Policy -->
+    <section class="section" style="padding:32px 0">
+      <div class="section-title"><span><span class="title-bar"></span>📋 政策公告</span><a href="news-list.html?cat=policy" class="more-link">查看全部 432 篇 →</a></div>
+      <div class="grid grid-3 gap-2">
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);display:flex;align-items:center;justify-content:center;font-size:2rem">📋</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-orange">政策公告</span><span>2026-06-13</span></div>
+            <div class="card-title">数字化转型试点城市名单公布</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#ffedd5,#fdba74);display:flex;align-items:center;justify-content:center;font-size:2rem">📑</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-orange">政策公告</span><span>2026-06-11</span></div>
+            <div class="card-title">高企认定工作通知正式发布</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);display:flex;align-items:center;justify-content:center;font-size:2rem">📝</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-orange">政策公告</span><span>2026-06-08</span></div>
+            <div class="card-title">中小企业融资支持政策汇总</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Category: Activity -->
+    <section class="section section-white" style="padding:32px 0">
+      <div class="section-title"><span><span class="title-bar"></span>🎉 活动通知</span><a href="news-list.html?cat=activity" class="more-link">查看全部 218 篇 →</a></div>
+      <div class="grid grid-3 gap-2">
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#fee2e2,#fecaca);display:flex;align-items:center;justify-content:center;font-size:2rem">🎉</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-red">活动通知</span><span>2026-06-11</span></div>
+            <div class="card-title">企业服务生态大会8月举办</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#fee2e2,#fca5a5);display:flex;align-items:center;justify-content:center;font-size:2rem">🎯</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-red">活动通知</span><span>2026-06-06</span></div>
+            <div class="card-title">数字化转型沙龙上海站报名中</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#fee2e2,#fecaca);display:flex;align-items:center;justify-content:center;font-size:2rem">📚</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-red">活动通知</span><span>2026-06-02</span></div>
+            <div class="card-title">高企认定申报辅导直播课预告</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Category: Product -->
+    <section class="section" style="padding:32px 0">
+      <div class="section-title"><span><span class="title-bar"></span>💡 产品资讯</span><a href="news-list.html?cat=product" class="more-link">查看全部 576 篇 →</a></div>
+      <div class="grid grid-3 gap-2">
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);display:flex;align-items:center;justify-content:center;font-size:2rem">💡</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-blue">产品资讯</span><span>2026-06-12</span></div>
+            <div class="card-title">企信通Pro一站式信息管理平台</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#ede9fe,#c4b5fd);display:flex;align-items:center;justify-content:center;font-size:2rem">🤖</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-blue">产品资讯</span><span>2026-06-05</span></div>
+            <div class="card-title">RPA+AI自动化办公新范式发布</div>
+          </div>
+        </a>
+        <a href="news-detail.html" class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);display:flex;align-items:center;justify-content:center;font-size:2rem">🔧</div>
+          <div class="card-body">
+            <div class="card-meta mb-1"><span class="tag tag-blue">产品资讯</span><span>2026-05-28</span></div>
+            <div class="card-title">智云运维平台3.0全新上线</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- More Categories -->
+    <section class="section section-white" style="padding:32px 0">
+      <div class="section-title"><span><span class="title-bar"></span>更多频道</span></div>
+      <div class="grid grid-4 gap-2">
+        <a href="news-list.html?cat=tech" class="category-item">
+          <div class="cat-icon" style="background:#f0e6ff;color:#7c3aed">⚡</div>
+          <div class="cat-name">技术前沿</div>
+          <div class="cat-count">342 篇</div>
+        </a>
+        <a href="news-list.html?cat=finance" class="category-item">
+          <div class="cat-icon" style="background:#fef9c3;color:#ca8a04">💰</div>
+          <div class="cat-name">财经观察</div>
+          <div class="cat-count">267 篇</div>
+        </a>
+        <a href="news-list.html?cat=hr" class="category-item">
+          <div class="cat-icon" style="background:#e0f2fe;color:#0284c7">👥</div>
+          <div class="cat-name">人才招聘</div>
+          <div class="cat-count">158 篇</div>
+        </a>
+        <a href="news-list.html?cat=case" class="category-item">
+          <div class="cat-icon" style="background:#fce7f3;color:#db2777">📖</div>
+          <div class="cat-name">案例分享</div>
+          <div class="cat-count">213 篇</div>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-icon">企</span>企信聚合</div><p>多企业资讯聚合门户，一站式企业资讯阅读与信息查询服务。</p></div>
+      <div class="footer-col"><h4>资讯中心</h4><a href="news-list.html?cat=industry">行业资讯</a><a href="news-list.html?cat=dynamic">企业动态</a><a href="news-list.html?cat=policy">政策公告</a><a href="news-list.html?cat=activity">活动通知</a><a href="news-list.html?cat=product">产品资讯</a></div>
+      <div class="footer-col"><h4>平台服务</h4><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="sitemap.html">网站地图</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="#">客服热线：400-888-0000</a><a href="#">商务合作：biz@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 企信聚合平台 版权所有</span><span><a href="#">京ICP备XXXXXXXX号-1</a> | <a href="#">京公网安备XXXXXXXXXXXXXX号</a></span></div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+</body>
+</html>

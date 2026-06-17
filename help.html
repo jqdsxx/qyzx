@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>帮助中心 - 企信聚合</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo"><span class="logo-icon">企</span>企信聚合</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a>
+      <a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html" class="active">帮助中心</a>
+    </nav>
+    <div class="header-right">
+      <form class="header-search search-form" action="search.html">
+        <input type="text" name="q" placeholder="搜索资讯、企业..." class="search-input-from-url">
+        <button type="submit"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      </form>
+      <a href="login.html" class="btn btn-primary btn-sm">登录</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" style="padding:6px"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobile-drawer" class="mobile-drawer">
+  <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+  <div style="margin-top:40px" class="mobile-nav">
+    <a href="index.html">首页</a><a href="news-list.html">资讯中心</a><a href="categories.html">分类频道</a><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="login.html">登录</a>
+  </div>
+</div>
+
+<main>
+  <!-- Help Header -->
+  <div style="background:linear-gradient(135deg,#1a56db,#3b82f6);padding:48px 20px;text-align:center;color:#fff">
+    <div class="container">
+      <h1 style="font-size:1.8rem;font-weight:700;margin-bottom:12px">帮助中心</h1>
+      <p style="font-size:.95rem;opacity:.9">有问题？在这里找到答案</p>
+      <div style="max-width:520px;margin:20px auto 0;position:relative">
+        <input type="text" placeholder="搜索常见问题..." style="width:100%;padding:14px 20px;border-radius:28px;border:none;font-size:.9rem;background:rgba(255,255,255,.95);color:var(--color-text)">
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:48px;padding-bottom:48px">
+    <!-- Quick Categories -->
+    <div class="grid grid-3 gap-3" style="margin-bottom:48px">
+      <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:28px;text-align:center">
+        <div style="font-size:2rem;margin-bottom:10px">📝</div>
+        <h3 style="font-size:1rem;font-weight:600;margin-bottom:6px">投稿指南</h3>
+        <p style="font-size:.85rem;color:var(--color-text-secondary)">了解如何投稿和发布资讯</p>
+      </div>
+      <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:28px;text-align:center">
+        <div style="font-size:2rem;margin-bottom:10px">📋</div>
+        <h3 style="font-size:1rem;font-weight:600;margin-bottom:6px">发布规范</h3>
+        <p style="font-size:.85rem;color:var(--color-text-secondary)">资讯发布的内容规范与要求</p>
+      </div>
+      <div style="background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border-light);padding:28px;text-align:center">
+        <div style="font-size:2rem;margin-bottom:10px">❓</div>
+        <h3 style="font-size:1rem;font-weight:600;margin-bottom:6px">常见问题</h3>
+        <p style="font-size:.85rem;color:var(--color-text-secondary)">用户高频问题与解答</p>
+      </div>
+    </div>
+
+    <!-- Submission Guide -->
+    <div style="background:var(--color-bg);border-radius:var(--radius-xl);border:1px solid var(--color-border-light);padding:36px;margin-bottom:32px">
+      <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:20px"><span style="width:4px;height:20px;background:var(--color-primary);border-radius:2px;display:inline-block;margin-right:10px;vertical-align:middle"></span>投稿指南</h2>
+      <div style="font-size:.9rem;color:var(--color-text-secondary);line-height:2">
+        <h3 style="font-size:1rem;font-weight:600;color:var(--color-text);margin:16px 0 8px">一、投稿资格</h3>
+        <p>1. 仅限平台入驻企业账号可投稿发布资讯</p>
+        <p>2. 投稿账号需已完成企业认证审核</p>
+        <p>3. 同一企业可拥有多个投稿账号（需分配权限）</p>
+
+        <h3 style="font-size:1rem;font-weight:600;color:var(--color-text);margin:16px 0 8px">二、投稿流程</h3>
+        <p>1. 登录企业账号 → 进入用户中心 → 点击"发布资讯"</p>
+        <p>2. 填写资讯标题、正文、分类、封面图等信息</p>
+        <p>3. 提交后进入审核队列，1-2个工作日内完成审核</p>
+        <p>4. 审核通过后自动发布，审核不通过将退回并附原因</p>
+
+        <h3 style="font-size:1rem;font-weight:600;color:var(--color-text);margin:16px 0 8px">三、内容要求</h3>
+        <p>1. 标题：简洁明确，不超过30个字</p>
+        <p>2. 正文：图文并茂，建议配1-3张相关图片</p>
+        <p>3. 分类：准确选择资讯所属分类</p>
+        <p>4. 封面图：建议尺寸1200×675px，大小不超过5MB</p>
+      </div>
+    </div>
+
+    <!-- Publishing Standards -->
+    <div style="background:var(--color-bg);border-radius:var(--radius-xl);border:1px solid var(--color-border-light);padding:36px;margin-bottom:32px">
+      <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:20px"><span style="width:4px;height:20px;background:var(--color-primary);border-radius:2px;display:inline-block;margin-right:10px;vertical-align:middle"></span>资讯发布规范</h2>
+      <div style="font-size:.9rem;color:var(--color-text-secondary);line-height:2">
+        <h3 style="font-size:1rem;font-weight:600;color:var(--color-text);margin:16px 0 8px">禁止发布的内容</h3>
+        <p>❌ 虚假信息、谣言或未经证实的信息</p>
+        <p>❌ 侵犯他人知识产权、隐私权的内容</p>
+        <p>❌ 违反法律法规的内容</p>
+        <p>❌ 纯广告、营销推广类内容（不含合理的产品介绍）</p>
+        <p>❌ 恶意攻击、诋毁竞争对手的内容</p>
+        <p>❌ 与企业业务无关的内容</p>
+
+        <h3 style="font-size:1rem;font-weight:600;color:var(--color-text);margin:16px 0 8px">推荐发布的格式</h3>
+        <p>✅ 标题简明扼要，能准确概括资讯核心内容</p>
+        <p>✅ 正文结构清晰，建议使用小标题分段</p>
+        <p>✅ 数据引用注明来源，图片清晰且无版权争议</p>
+        <p>✅ 涉及政策法规的内容附上官方文件链接</p>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div style="background:var(--color-bg);border-radius:var(--radius-xl);border:1px solid var(--color-border-light);padding:36px">
+      <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:20px"><span style="width:4px;height:20px;background:var(--color-primary);border-radius:2px;display:inline-block;margin-right:10px;vertical-align:middle"></span>常见问题</h2>
+
+      <div style="border-bottom:1px solid var(--color-border-light);padding:16px 0">
+        <div style="font-size:.95rem;font-weight:600;color:var(--color-text);cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+          <span>如何入驻平台成为发布企业？</span>
+          <span style="color:var(--color-text-light);font-size:1.2rem">+</span>
+        </div>
+        <p style="font-size:.85rem;color:var(--color-text-secondary);line-height:1.7;margin-top:10px;padding-left:0">企业入驻需提交营业执照、企业简介等材料进行审核。审核通过后即可获得专属企业页面和资讯发布权限。具体流程请联系商务合作邮箱 biz@example.com。</p>
+      </div>
+
+      <div style="border-bottom:1px solid var(--color-border-light);padding:16px 0">
+        <div style="font-size:.95rem;font-weight:600;color:var(--color-text);cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+          <span>发布的资讯多久能通过审核？</span>
+          <span style="color:var(--color-text-light);font-size:1.2rem">+</span>
+        </div>
+        <p style="font-size:.85rem;color:var(--color-text-secondary);line-height:1.7;margin-top:10px">正常情况下1-2个工作日完成审核。节假日顺延。如遇紧急发布需求，可联系客服加急处理。</p>
+      </div>
+
+      <div style="border-bottom:1px solid var(--color-border-light);padding:16px 0">
+        <div style="font-size:.95rem;font-weight:600;color:var(--color-text);cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+          <span>如何修改已发布的资讯？</span>
+          <span style="color:var(--color-text-light);font-size:1.2rem">+</span>
+        </div>
+        <p style="font-size:.85rem;color:var(--color-text-secondary);line-height:1.7;margin-top:10px">登录企业账号，在用户中心找到对应资讯，点击编辑即可修改。修改后的内容需重新提交审核。</p>
+      </div>
+
+      <div style="border-bottom:1px solid var(--color-border-light);padding:16px 0">
+        <div style="font-size:.95rem;font-weight:600;color:var(--color-text);cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+          <span>如何申请置顶或推荐？</span>
+          <span style="color:var(--color-text-light);font-size:1.2rem">+</span>
+        </div>
+        <p style="font-size:.85rem;color:var(--color-text-secondary);line-height:1.7;margin-top:10px">重要公告和紧急通知可申请置顶，需联系平台运营审核。推荐位由编辑团队根据内容质量综合评定。</p>
+      </div>
+
+      <div style="padding:16px 0">
+        <div style="font-size:.95rem;font-weight:600;color:var(--color-text);cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+          <span>平台是否收费？</span>
+          <span style="color:var(--color-text-light);font-size:1.2rem">+</span>
+        </div>
+        <p style="font-size:.85rem;color:var(--color-text-secondary);line-height:1.7;margin-top:10px">基础入驻和资讯发布功能免费。置顶推荐、数据分析增值服务等需付费，详情请联系商务合作。</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-icon">企</span>企信聚合</div><p>多企业资讯聚合门户，一站式企业资讯阅读与信息查询服务。</p></div>
+      <div class="footer-col"><h4>资讯中心</h4><a href="news-list.html?cat=industry">行业资讯</a><a href="news-list.html?cat=dynamic">企业动态</a><a href="news-list.html?cat=policy">政策公告</a><a href="news-list.html?cat=activity">活动通知</a><a href="news-list.html?cat=product">产品资讯</a></div>
+      <div class="footer-col"><h4>平台服务</h4><a href="enterprise-list.html">入驻企业</a><a href="about.html">平台介绍</a><a href="help.html">帮助中心</a><a href="sitemap.html">网站地图</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="#">客服热线：400-888-0000</a><a href="#">商务合作：biz@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 企信聚合平台 版权所有</span><span><a href="#">京ICP备XXXXXXXX号-1</a> | <a href="#">京公网安备XXXXXXXXXXXXXX号</a></span></div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+</body>
+</html>
